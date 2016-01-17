@@ -1,0 +1,59 @@
+//## Base theme color file
+
+/******
+General
+******/
+
+/* Dropdown Options */
+select.form-control option {
+  border: solid #3d434f;
+  border-width: 1px 0;
+  margin: 0;
+  background: $brand-main-color;
+  color: $brand-main-font-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 13px;
+  letter-spacing: .075em;
+  text-indent: 10px;
+  padding-top: 5px;
+}
+
+select optgroup {
+  border: solid #3d434f;
+  border-width: 1px 0;
+  margin: 0;
+  background: $brand-main-color;
+  color: $brand-main-font-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 13px;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  text-indent: 10px;
+  padding-top: 5px;
+}
+
+/* All Input Boxes */
+
+.uneditable-input.input-block,
+select.input-block,
+textarea.input-block,
+input[type="color"].input-block,
+input[type="date"].input-block,
+input[type="datetime"].input-block,
+input[type="datetime-local"].input-block,
+input[type="email"].input-block,
+input[type="month"].input-block,
+input[type="number"].input-block,
+input[type="password"].input-block,
+input[type="search"].input-block,
+input[type="tel"].input-block,
+input[type="text"].input-block,
+input[type="time"].input-block,
+input[type="url"].input-block,
+input[type="week"].input-block {
+  width: 100%;
+}

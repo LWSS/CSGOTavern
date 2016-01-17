@@ -1,0 +1,318 @@
+/***
+Rounded Portlets
+***/
+/*
+.portlet {
+	border-radius: 4px !important;
+}
+
+.portlet .portlet-title {
+	border-radius: 4px 4px 0px 0px !important;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-body .form-actions  {
+	border-radius: 0px 0px 4px 4px !important;
+}
+*/
+/*.page-header .page-header-top .page-logo .logo-default {
+    margin: 22px 0 0 0 !important;
+}*/
+
+.tiles .tile:hover
+{
+	border-color: #000 !important;
+}
+.tiles .tile .tile-body
+{
+	padding: inherit !important;
+}
+
+body > div.page-container > div.page-content,
+.page-content
+{
+    background: url(../img/background/retina_wood.png) !important;
+}
+
+.bg-parchment
+{
+	border-color: #EAD5B5 !important;
+	background-image: url('../img/background/parchment2.jpg') !important;
+	background-color: #EAD5B5 !important;
+	color: #FFFFFF !important;
+}
+
+.tiles .csgoitem .tile .tile-object > .name
+{
+	margin-left: inherit !important;
+	margin-right: inherit !important;
+	color: #000000 !important;
+	text-align: center !important;
+	width: 100%;
+
+	/*margin: auto;*/
+	/*width: 60%;*/
+	/*border:3px solid #8AC007;*/
+	/*padding: 10px;*/
+}
+
+.logo-default {
+	position: relative;
+	bottom: 7px;
+}
+
+body {
+	background: url(../img/background/retina_wood.png);
+}
+hr {
+	border-top: 1px solid #000 !important;
+}
+
+.portlet.light, .page-content, .page-header, .page-head
+{
+	/*background-color: rgba(255, 255, 255, 0) !important;*/
+}
+
+/* Navigation Bar */
+.page-header .page-header-menu,
+.page-header .page-header-menu .hor-menu .navbar-nav, .top-menu
+{
+	background: #C5A87C !important;
+}
+
+/* Hover On Navigation Bar */
+.page-header .page-header-menu .hor-menu .navbar-nav > li.open > a, .page-header .page-header-menu .hor-menu .navbar-nav > li > a:hover {
+	background: #C5A87C !important;
+}
+.page-header .page-header-menu .hor-menu .navbar-nav > li > a > i, .page-header .page-header-menu .hor-menu .navbar-nav > li > a
+{
+	color: #000000 !important;
+	/*background-color: #EAD5B5; /* Background around drop-down icons in hor-menu*/
+}
+.page-header .page-header-menu .search-form
+{
+	background: #EAD5B5 !important;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+.page-header .page-header-menu .search-form .input-group, .page-header .page-header-menu .search-form .input-group .form-control
+{
+	background: #EAD5B5 !important;
+}
+.page-footer
+{
+	background: #C5A87C !important;
+	color: #000;
+	font-size: 105%;
+}
+.img-circle
+{
+	max-height: 41px;
+	max-width: 41px;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu {
+	background: #C5A87C !important;
+}
+
+/* Nav Bar Drop downs */
+.page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li > a {
+	color: #000;
+}
+/* Hover over the Navigation Dropdown Item */
+.page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li:hover > a {
+	color: #000;
+	background: #EAD5B5;
+}
+
+/* Icons in the Navigation Dropdowns */
+.page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li > a > i {
+	color: #000;
+}
+
+/* Portlets for User Info on Profile */
+.portlet > .portlet-title {
+	color: #000;
+	border-bottom: 1px solid #000;
+}
+
+.tabbable-line > .nav-tabs > li.active {
+	border-bottom: 4px solid #000;
+}
+
+.portlet.light > .portlet-title > .nav-tabs > li.active > a, .portlet.light > .portlet-title > .nav-tabs > li:hover > a {
+	margin: 0;
+	background: none;
+	color: #000;
+}
+
+.portlet > .portlet-title > .nav-tabs > li.active > a, .portlet > .portlet-title > .nav-tabs > li:hover > a {
+	background: #000;
+	border: 1px solid #000;
+}
+
+/* Portlets for User Profile Comments */
+.general-item-list > .item > .item-body {
+	background: #fff;
+}
+
+.primary-link {
+	color: #000;
+	font-weight: 500;
+}
+
+.general-item-list > .item > .item-head > .item-details > .item-label {
+	/* Hour Label for Comment EX: '3 hrs ago' */
+	color: #000;
+	font-style: italic;
+}
+
+.general-item-list > .item {
+	/* Each profile comment ... */
+	padding: 5px 0;
+	border-bottom: 1px solid #000;
+}
+
+.general-item-list > .item > .item-body {
+	/* Inside Each profile Comment .. */
+	word-wrap: break-word; /* Added to Fix Infinite One-Line Comments, kek */
+	color: #000;
+}
+
+a {
+	color: #000;
+}
+
+/* Search btn Submit on Mobile Nav Bar */
+.page-header .search-form .input-group .input-group-btn .btn.submit {
+	/*background: #EAD5B5;
+}
+.page-header .search-form .input-group .input-group-btn .btn.submit:hover {
+	/*background: #EAD5B5;*/
+}
+
+/* Color of magnifying glass on Mobile Nav Bar Search Bar */
+.page-header .search-form .input-group .input-group-btn .btn.submit i {
+	color: #000 !important;
+}
+
+/* Background of Mobile Nav Bar Dropdown Item when Hovered upon */
+.page-header .page-header-menu .hor-menu .navbar-nav > li.open > a, .page-header .page-header-menu .hor-menu .navbar-nav > li.open > a:hover, .page-header .page-header-menu .hor-menu .navbar-nav > li.current > a, .page-header .page-header-menu .hor-menu .navbar-nav > li.current > a:hover {
+	color: #000 !important;
+	background: #EAD5B5 !important;
+}
+
+/* Text in Mobile Nav Bar Dropdown Item When hovered upon */
+.page-header .page-header-menu .hor-menu .navbar-nav > li:hover > a {
+	color: #fff !important;
+}
+
+/* Icon Color when Selected in Mobile Nav Bar Dropdowns */
+.page-header .page-header-menu .hor-menu .navbar-nav > li.open > a > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.open > a:hover > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.active > a > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.current > a > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.current > a:hover > i {
+	color: #000 !important;
+}
+
+.page-breadcrumb. breadcrumb {
+	color: #000 !important;
+}
+
+.active {
+	color: #000 !important;
+}
+
+.booking-result {
+	/*border: 1px solid #000;*/
+	/*overflow: hidden;*/
+	max-height: 220px;
+}
+
+.pass-body {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.pass-user {
+	width: 60%;
+	margin: 0 auto;
+}
+/*  Bootstrap Sillyness, Special thanks to: http://www.bluthemes.com/blog/3/clearing-bootstrap-3-columns */
+
+/*  Tablet  */
+@media (min-width: 767px) {
+
+	/* Column clear fix */
+	.col-lg-1:nth-child(12n+1),
+	.col-lg-2:nth-child(6n+1),
+	.col-lg-3:nth-child(4n+1),
+	.col-lg-4:nth-child(3n+1),
+	.col-lg-6:nth-child(2n+1),
+	.col-md-1:nth-child(12n+1),
+	.col-md-2:nth-child(6n+1),
+	.col-md-3:nth-child(4n+1),
+	.col-md-4:nth-child(3n+1),
+	.col-md-6:nth-child(2n+1) {
+		clear: none;
+	}
+
+	.col-sm-1:nth-child(12n+1),
+	.col-sm-2:nth-child(6n+1),
+	.col-sm-3:nth-child(4n+1),
+	.col-sm-4:nth-child(3n+1),
+	.col-sm-6:nth-child(2n+1) {
+		clear: left;
+	}
+}
+
+/*  Medium Desktop  */
+@media (min-width: 992px) {
+
+	/* Column clear fix */
+	.col-lg-1:nth-child(12n+1),
+	.col-lg-2:nth-child(6n+1),
+	.col-lg-3:nth-child(4n+1),
+	.col-lg-4:nth-child(3n+1),
+	.col-lg-6:nth-child(2n+1),
+	.col-sm-1:nth-child(12n+1),
+	.col-sm-2:nth-child(6n+1),
+	.col-sm-3:nth-child(4n+1),
+	.col-sm-4:nth-child(3n+1),
+	.col-sm-6:nth-child(2n+1) {
+		clear: none;
+	}
+
+	.col-md-1:nth-child(12n+1),
+	.col-md-2:nth-child(6n+1),
+	.col-md-3:nth-child(4n+1),
+	.col-md-4:nth-child(3n+1),
+	.col-md-6:nth-child(2n+1) {
+		clear: left;
+	}
+}
+
+/*  Large Desktop  */
+@media (min-width: 1200px) {
+
+	/* Column clear fix */
+	.col-md-1:nth-child(12n+1),
+	.col-md-2:nth-child(6n+1),
+	.col-md-3:nth-child(4n+1),
+	.col-md-4:nth-child(3n+1),
+	.col-md-6:nth-child(2n+1),
+	.col-sm-1:nth-child(12n+1),
+	.col-sm-2:nth-child(6n+1),
+	.col-sm-3:nth-child(4n+1),
+	.col-sm-4:nth-child(3n+1),
+	.col-sm-6:nth-child(2n+1) {
+		clear: none;
+	}
+
+	.col-lg-1:nth-child(12n+1),
+	.col-lg-2:nth-child(6n+1),
+	.col-lg-3:nth-child(4n+1),
+	.col-lg-4:nth-child(3n+1),
+	.col-lg-6:nth-child(2n+1) {
+		clear: left;
+	}
+}

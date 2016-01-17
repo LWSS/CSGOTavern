@@ -1,0 +1,128 @@
+{
+    "name": "cartalyst/platform",
+    "description": "Platform",
+    "keywords": [
+        "cartalyst",
+        "laravel",
+        "platform",
+        "bootstrap"
+    ],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Cartalyst LLC",
+            "email": "help@cartalyst.com"
+        },
+        {
+            "name": "Ben Corlett",
+            "email": "ben.corlett@cartalyst.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Bruno Gaspar",
+            "email": "bruno.gaspar@cartalyst.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Dan Syme",
+            "email": "dan.syme@cartalyst.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "Suhayb Wardany",
+            "email": "su.wardany@cartalyst.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.cartalyst.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.1.*",
+
+        "platform/admin-default": "2.0.*",
+        "platform/frontend-default": "2.0.*",
+
+        "platform/foundation": "~3.0",
+        "platform/installer": "~3.0",
+
+        "platform/access": "~3.0",
+        "platform/attributes": "~3.0",
+        "platform/content": "~3.0",
+        "platform/dashboard": "~3.0",
+        "platform/media": "~3.0",
+        "platform/menus": "~3.0",
+        "platform/operations": "~3.0",
+        "platform/pages": "~3.0",
+        "platform/settings": "~3.0",
+        "platform/themes": "~3.0",
+        "laravelcollective/html": "^5.1",
+        "fintech-fab/laravel-queue-rabbitmq": "5.1",
+        "invisnik/laravel-steam-auth": "1.1.*",
+        "cartalyst/stripe-laravel": "2.0.*",
+        "cartalyst/stripe-billing-laravel": "~3.0",
+        "watson/rememberable": "dev-master",
+        "jenssegers/agent": "^2.2",
+        "hipchat/hipchat-php": "^1.4"
+        
+    },
+    "require-dev": {
+        "doctrine/dbal": "~2.4",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
+        "phpspec/phpspec": "~2.1",
+        "barryvdh/laravel-ide-helper": "dev-master",
+        "ehesp/steam-login": "~1.0.1"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "files": [
+            "app/functions.php"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Cartalyst\\Platform\\": "app/overrides/src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan platform:check-env-file",
+            "php artisan optimize",
+            "php artisan platform:upgrade",
+            "php artisan theme:publish --extensions",
+            "php artisan vendor:publish --provider='Platform\\Installer\\Laravel\\InstallerServiceProvider' --tag='assets'",
+            "php artisan theme:compile"
+        ],
+        "pre-update-cmd": [
+            "php artisan clear-compiled"
+        ],
+        "post-update-cmd": [
+            "php artisan platform:check-env-file",
+            "php artisan optimize",
+            "php artisan platform:upgrade",
+            "php artisan theme:publish --extensions",
+            "php artisan vendor:publish --provider='Platform\\Installer\\Laravel\\InstallerServiceProvider' --tag='assets'",
+            "php artisan theme:compile"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "component": "application"
+    },
+    "minimum-stability": "stable"
+}

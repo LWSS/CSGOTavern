@@ -1,0 +1,12 @@
+[submodule "dependencies/stomp-websocket"]
+	path = dependencies/stomp-websocket
+	url = https://github.com/jmesnil/stomp-websocket/
+[submodule "dependencies/sockjs-client"]
+	path = dependencies/sockjs-client
+	url = https://github.com/sockjs/sockjs-client
+[submodule "dependencies/unsemantic"]
+	path = dependencies/unsemantic
+	url = https://github.com/nathansmith/unsemantic
+[submodule "public/themes/frontend/tavern/assets/plugins/unsemantic"]
+	path = public/themes/frontend/tavern/assets/plugins/unsemantic
+	url = https://github.com/nathansmith/unsemantic

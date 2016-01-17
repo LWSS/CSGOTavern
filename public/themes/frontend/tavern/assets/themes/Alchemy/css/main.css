@@ -1,0 +1,153 @@
+
+
+.navbar-nav > li {
+}
+
+.navbar-nav > li > .left {
+    background-image: url("http://assets-cloud.enjin.com/themes/1283306607_cont-header.png") !important;
+}
+
+.navbar-nav > li > .left, .container_footer .left, .container_footer .footer_text_left {
+    height: 100%;
+    width: 50.004%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: left bottom no-repeat;
+}
+
+
+.page-header-menu {
+    position: relative;
+}
+.page-header-menu .bg.left {
+    background-image: url("http://assets-cloud.enjin.com/themes/1283307622_1283227637_menu.png");
+}
+.page-header-menu .bg.right {
+    background-image: url("http://assets-cloud.enjin.com/themes/1283307622_1283227637_menu.png");
+}
+.page-header-menu .left, .page-header-menu .right {
+    width: 50.07%;
+}
+.page-header-menu .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50.004%;
+    height: 100%;
+    background-position: left top;
+}
+
+.page-header-menu .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50.004%;
+    height: 100%;
+    background-position: right top;
+}
+
+.element_button .l {
+    background-image: url("http://assets-cloud.enjin.com/themes/1283308013_medium.png");
+}
+.element_button .r {
+    background-image: url("http://assets-cloud.enjin.com/themes/1283308013_medium.png");
+}
+.element_button .l {
+    left: 0;
+    background-position: left top;
+}
+.element_button .r {
+    right: 0;
+    background-position: right top;
+}
+.element_button .l, .element_button .r, .element_smallbutton .l, .element_smallbutton .r, .element_bigbutton .l, .element_bigbutton .r {
+    position: absolute;
+    top: 0;
+    width: 50.004%;
+    height: 100%;
+}
+.element_button .l, .element_button .r, .element_smallbutton .l, .element_smallbutton .r, .element_bigbutton .l, .element_bigbutton .r {
+    width: 52.5%;
+}
+.element_button {
+    border-color: transparent;
+    background-color: transparent;
+}
+.element_button, .element_smallbutton, .element_bigbutton {
+    display: inline-block;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+}
+.element_button input, .element_button .button_block {
+    height: 28px;
+    padding-top: -2px;
+    color: #ffd747;
+    padding-right: 7px;
+    line-height: 28px;
+    padding-left: 8px;
+}
+.element_button input, .element_button .button_block {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.navbar-nav > li {
+}
+
+.big_element_button .l {
+    background-image: url("http://assets-cloud.enjin.com/themes/1283308013_medium.png");
+}
+.big_element_button .r {
+    background-image: url("http://assets-cloud.enjin.com/themes/1283308013_medium.png");
+}
+.big_element_button .l {
+    left: 0;
+    background-position: left top;
+}
+.big_element_button .r {
+    right: 0;
+    background-position: right top;
+}
+.big_element_button .l, .big_element_button .r, .element_smallbutton .l, .element_smallbutton .r, .element_bigbutton .l, .element_bigbutton .r {
+    position: absolute;
+    top: 0;
+    width: 50.004%;
+    height: 100%;
+}
+.big_element_button .l, .big_element_button .r, .element_smallbutton .l, .element_smallbutton .r, .element_bigbutton .l, .element_bigbutton .r {
+    width: 52.5%;
+}
+.big_element_button {
+    border-color: transparent;
+    background-color: transparent;
+}
+.big_element_button, .element_smallbutton, .element_bigbutton {
+    display: inline-block;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+}
+.big_element_button input, .big_element_button .button_block {
+    height: 100%;
+    padding-top: -2px;
+    color: #ffd747;
+    padding-right: 7px;
+    line-height: 28px;
+    padding-left: 8px;
+}
+.big_element_button input, .big_element_button .button_block {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+    font-size: 12px;
+    font-family: Arial;
+}

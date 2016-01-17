@@ -1,0 +1,184 @@
+/**
+ * Part of the Platform Default Frontend Theme.
+ *
+ * NOTICE OF LICENSE
+ *
+ * Licensed under the Cartalyst PSL License.
+ *
+ * This source file is subject to the Cartalyst PSL License that is
+ * bundled with this package in the LICENSE file.
+ *
+ * @package    Platform Theme Frontend Default
+ * @version    1.0.3
+ * @author     Cartalyst LLC
+ * @license    Cartalyst PSL
+ * @copyright  (c) 2011-2015, Cartalyst LLC
+ * @link       https://cartalyst.com
+ */
+
+.page__header {
+	position: relative;
+	text-align: center;
+	background: transparent url('../img/ornery-octopus.svg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+
+	.caption {
+
+		padding:120px 16px;
+		background: rgba(255, 255, 255, 0.9);
+
+		h1 {
+			margin:0;
+			padding:4px 0;
+
+			span {
+				font-size:0.5em;
+				display: inline-block;
+				padding-left:8px;
+			}
+		}
+
+		h2 {
+			margin-bottom:32px;
+		}
+
+	}
+
+}
+
+.page__content {
+	border-top:1px solid #ddd;
+
+	.featurette {
+		overflow: hidden;
+
+		&:first-child {
+			margin-top:32px;
+		}
+
+		h2 span {
+			color:#696969;
+		}
+
+		p {
+			margin-bottom: 20px;
+			font-weight: 300;
+		}
+
+	}
+
+}
+
+/* responsive styles */
+
+/* phone */
+@media only screen and (max-width: 50em) {
+
+	.caption h1 {
+		font-size: 48px;
+	}
+	.caption h2 {
+		font-size: 28px;
+		line-height: 1.3;
+	}
+	.caption code {
+		display: none;
+	}
+	.featurette	{
+		text-align:center;
+
+		p {
+			line-height: 1.5;
+			font-size:16px;
+		}
+
+		.featurette__image {
+			display: none;
+		}
+	}
+	.featurette-divider {
+		margin: 10px 0;
+	}
+
+}
+
+/* tablet */
+@media only screen and (min-width: 50em) {
+
+	.caption h1 {
+		font-size: 72px;
+	}
+	.caption h2 {
+		font-size: 48px;
+	}
+	.caption code {
+		border:3px solid #ddd;
+		background:#fff;
+		color:#666;
+		font-family: 'Source Code Pro', ;
+		font-weight: 300;
+		padding:12px 6px;
+		font-size: 16px;
+	}
+	.featurette	{
+		text-align: left;
+		display: table;
+
+		.featurette__caption,
+		.featurette__image {
+			display: table-cell;
+			width:50%;
+			vertical-align: middle;
+
+			img {
+				vertical-align: middle;
+				max-width:80%;
+			}
+		}
+
+		&.featurette--left {
+			.featurette__image {
+				padding:16px 0 16px 48px;
+				text-align: right;
+			}
+		}
+
+		&.featurette--right {
+			.featurette__image {
+				padding:16px 48px 16px 0;
+				text-align: left;
+			}
+		}
+
+
+		p {
+			font-size: 24px;
+		}
+	}
+	.featurette-divider {
+		margin: 40px 0;
+	}
+
+}
+
+/* desktop */
+@media only screen and (min-width: 70em) {
+
+	.caption h1 {
+		font-size: 96px;
+	}
+	.caption h2 {
+		font-size: 48px;
+	}
+	.caption code {
+		font-size: 20px;
+	}
+	.featurette	{
+		p {
+			font-size: 28px;
+		}
+	}
+}

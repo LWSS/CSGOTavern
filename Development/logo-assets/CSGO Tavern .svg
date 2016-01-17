@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="124" height="15" viewBox="0 0 124 15">
+  <defs>
+    <style>
+
+      .cls-2 {
+        font-size: 17px;
+      }
+
+      .cls-4 {
+        font-family: "SegoeUIBlack";
+        font-size: 17px;
+      }
+
+      .cls-5 {
+        font-family: "KozGoPr6N-Regular";
+        font-size: 17px;
+      }
+
+      .cls-6 {
+        font-family: "SitkaText";
+        font-size: 17px;
+      }
+
+      .cls-8 {
+        font-family: "FontAwesome";
+        font-size: 17px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" y="14px"><tspan class="cls-2"><tspan class="cls-4">CSGO</tspan><tspan class="cls-5"> </tspan><tspan class="cls-6">Tavern</tspan><tspan class="cls-5"> </tspan><tspan class="cls-8"></tspan></tspan></text>
+</svg>

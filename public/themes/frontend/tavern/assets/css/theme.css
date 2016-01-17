@@ -1,0 +1,12 @@
+
+/* Page header div of the main layout */
+.page-header
+{
+    background-color: #2c0903;
+}
+
+/* Inner page outer layer div */
+.page-content
+{
+    background: rgba(0, 0, 0, 0) !important;
+}

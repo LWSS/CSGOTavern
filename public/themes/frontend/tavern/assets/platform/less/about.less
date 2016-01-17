@@ -1,0 +1,246 @@
+/**
+ * Part of the Platform Default Frontend Theme.
+ *
+ * NOTICE OF LICENSE
+ *
+ * Licensed under the Cartalyst PSL License.
+ *
+ * This source file is subject to the Cartalyst PSL License that is
+ * bundled with this package in the LICENSE file.
+ *
+ * @package    Platform Theme Frontend Default
+ * @version    1.0.3
+ * @author     Cartalyst LLC
+ * @license    Cartalyst PSL
+ * @copyright  (c) 2011-2015, Cartalyst LLC
+ * @link       https://cartalyst.com
+ */
+
+
+ html,
+ body {
+	height: 100%;
+}
+
+body {
+	background-color: #262b30;
+	color: #f7f7f7;
+	text-align: center;
+	overflow: hidden;
+}
+
+hr {
+	border-color:#666;
+	width:100px;
+	margin:32px auto;
+}
+
+.brand {
+	position: fixed;
+	top: -50%;
+	left: -100%;
+	width: 200%;
+	height: 200%;
+	z-index: 1;
+	-webkit-transform: translateZ(0);
+
+	img {
+		display: none;
+	}
+
+	.svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		min-width: 50%;
+		min-height: 50%;
+		overflow-x: hidden;
+		fill:#383e45;
+		stroke-width:1px;
+		-webkit-transform: translateZ(0);
+	}
+
+}
+
+.credits {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	max-width: 640px;
+	margin-left: -320px;
+	z-index: 2;
+	padding-bottom:32px;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translateZ(0);
+
+	.title {
+		text-align: center;
+
+		h1 {
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			font-family: 'Source Code Pro', ;
+			font-weight: 900;
+		}
+
+		.subtitle {
+			font-family: 'Source Code Pro', ;
+			font-weight: 300;
+		}
+
+	}
+
+	.company {
+		font-size:16px;
+		font-weight: bold;
+		margin:32px 0;
+	}
+
+	.authors,
+	.honorables,
+	.supporters {
+
+		font-size:10px;
+		text-transform: uppercase;
+
+		p {
+			color:#cdcdcd;
+			margin:16px 0;
+		}
+
+		.lead {
+			color:#fff;
+			font-size:18px;
+			text-transform: none;
+		}
+
+		span {
+			margin:4px 0;
+			font-size:18px;
+			display: block;
+		}
+
+		.users {
+			letter-spacing: 1px;
+			line-height: 24px;
+			word-spacing: 1px;
+
+		}
+
+	}
+
+}
+
+.btn-return {
+	position: fixed;
+	top:16px;
+	right:16px;
+	z-index: 2px;
+	color:#bababa;
+	margin-top:16px;
+	background-color: #2d3338;
+	color: #fff;
+	border:2px solid #fff;
+	border-radius: 4px;
+	padding:8px;
+	font-weight: bold;
+	z-index: 4;
+}
+
+.btn-return:hover {
+	background: #f7f7f7;
+	color: #222;
+	border: 2px solid #222;
+}
+
+.version {
+	position: fixed;
+	bottom:16px;
+	right:16px;
+	z-index: 2px;
+	color:#bababa;
+	z-index: 3;
+}
+
+.fade-in {
+	animation: fadein 2s;
+	-moz-animation: fadein 2s; /* Firefox */
+	-webkit-animation: fadein 2s; /* Safari and Chrome */
+	-o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-moz-keyframes fadein { /* Firefox */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-o-keyframes fadein { /* Opera */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* phone */
+@media only screen and (min-width: 35em) {
+
+	.title h1 {
+		font-size:36px;
+	}
+	.title .subtitle {
+		font-size:16px
+	}
+	.version { display: none;}
+
+}
+
+/* tablet */
+@media only screen and (min-width: 45em) {
+
+	.title h1 {
+		font-size:48px;
+	}
+	.title .subtitle {
+		font-size: 22px;
+	}
+	.version {
+		display: block;
+	}
+
+}
+
+/* desktop */
+@media only screen and (min-width: 65em) {
+
+	.title h1 {
+		font-size:96px;
+	}
+	.title .subtitle {
+		font-size: 36px;
+	}
+
+}

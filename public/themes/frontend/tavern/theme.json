@@ -1,0 +1,7 @@
+{
+	"name":        "Tavern Frontend Theme",
+	"slug":        "frontend::tavern",
+	"description": "The tavern theme.",
+	"author":      "Tavern LLC",
+	"version":     "2.0"
+}

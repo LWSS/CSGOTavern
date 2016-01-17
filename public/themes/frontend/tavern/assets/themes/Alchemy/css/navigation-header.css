@@ -1,0 +1,42 @@
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li.open > a, .page-header .page-header-menu .hor-menu .navbar-nav > li > a:hover {
+    /*background-image: -moz-linear-gradient(center top, #173247, #1e1f21);*/
+    /*border: 1px solid #2f3c45;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 1px 3px #000;*/
+    /*color: #3b9fc1;*/
+    /*/!*display: block;*!/*/
+    /*/!*font: bold 10px/1 helvetica, arial, sans-serif;*!/*/
+    /*/!*height: 12px;*!/*/
+    /*/!*padding: 8px 0 10px;*!/*/
+    /*/!*text-align: center;*!/*/
+    /*/!*text-decoration: none;*!/*/
+    /*text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);*/
+    /*transition: all 0.35s ease-in-out 0s;*/
+    /*color: #336B9A !important;*/
+    /*background: #286290 !important;*/
+}
+
+div.container-fluid::before {
+
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li > a {
+    color: #ffed75 !important;
+    background: #286290 !important;
+}
+
+/* Navigation button icon */
+.page-header .page-header-menu .hor-menu .navbar-nav > li > a > i {
+    color: #FFFFFF !important;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li.open > a,
+.page-header .page-header-menu .hor-menu .navbar-nav > li.open > a:hover,
+.page-header .page-header-menu .hor-menu .navbar-nav > li.active > a,
+.page-header .page-header-menu .hor-menu .navbar-nav > li.active > a:hover,
+.page-header .page-header-menu .hor-menu .navbar-nav > li.current > a,
+.page-header .page-header-menu .hor-menu .navbar-nav > li.current > a:hover {
+    color: #FFFFFF !important;
+    background: #35B6D6 !important;
+}

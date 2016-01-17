@@ -1,0 +1,128 @@
+/**
+ * Part of the Platform Default Frontend Theme.
+ *
+ * NOTICE OF LICENSE
+ *
+ * Licensed under the Cartalyst PSL License.
+ *
+ * This source file is subject to the Cartalyst PSL License that is
+ * bundled with this package in the LICENSE file.
+ *
+ * @package    Platform Theme Frontend Default
+ * @version    1.0.3
+ * @author     Cartalyst LLC
+ * @license    Cartalyst PSL
+ * @copyright  (c) 2011-2015, Cartalyst LLC
+ * @link       https://cartalyst.com
+ */
+
+/* #Less variables
+----------------------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700);
+
+@success:        #5cb85c;
+@info:           #5bc0de;
+@warning:        #f0ad4e;
+@danger:         #a94442;
+
+
+/* Basics */
+html, body {
+	overflow-x:hidden;
+}
+
+.alerts {
+	margin:50px 0 0 0;
+	width:100%;
+
+	.alert {
+		border-radius: 0;
+		margin:0;
+	}
+}
+
+.base {
+	margin:50px 0;
+}
+
+.page {
+
+	.page__content {
+		padding-top:32px;
+	}
+}
+
+/* #Forms
+================================================== */
+
+form .help-block,
+form .error-block,
+form .parsley-help-block {
+	display: block;
+	margin-top:8px;
+	font-style: italic;
+}
+
+form .error-block,
+form .parsley-help-block {
+	color: @danger;
+}
+
+form .validate-icon {
+	background:transparent;
+}
+
+form input:required.valid + .validate-icon > i,
+form input.valid:focus + .validate-icon > i,
+form input:checked + .validate-icon > i,
+form select:required.valid + .validate-icon > i,
+form select.valid:focus + .validate-icon > i{
+	color: @success;
+}
+
+form input:required.required + .validate-icon > i,
+form input:required.error + .validate-icon > i,
+form input.required:focus + .validate-icon > i,
+form select:required.required + .validate-icon > i,
+form select.required:focus + .validate-icon > i {
+	color: @danger;
+}
+
+/* Enhanced error styling */
+form input.error + .validate-icon > i::before {
+	color:@warning;
+	content: "\f071";
+}
+form input.required + .validate-icon > i::before {
+	color:@danger;
+	content: "\f10c";
+}
+form .form-group + .has-success + input + .validate-icon > i::before {
+	color: @success;
+	content: "\f05d";
+}
+
+/* footer */
+.footer {
+
+	text-align: left;
+
+	.footer__company {
+		font-size:14px;
+		font-weight: bold;
+	}
+
+	.footer__tagline {
+		font-size:12px;
+	}
+
+	.footer__tagline span {
+		font-style: italic;
+		font-size:10px;
+	}
+
+	.footer__social {
+		margin-top:16px;
+	}
+
+}
