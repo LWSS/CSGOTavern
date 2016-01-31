@@ -10,13 +10,15 @@ use Cartalyst\Stripe\Exception\MissingParameterException;
 use DB;
 use Illuminate\Http\Request;
 use Sentinel;
+use Session;
+use SteamLogin;
 
 class BillingController extends Controller
 {
     public function __construct()
     {
         parent::__construct();
-        $this->middleware( 'auth' );
+        // $this->middleware( 'auth' );
     }
 
     /**
@@ -26,6 +28,10 @@ class BillingController extends Controller
      */
     public function index()
     {
+        if (\App\Models\SteamUser::check() !== true) {
+            Session::flash('lastpage', 'addtokens');
+            return redirect(SteamLogin::url(route('steam.oauth.callback')));
+        }
         $viewParams = array();
         /** @var \App\Models\TavernUser $user */
         $user = Sentinel::getUser();
@@ -51,7 +57,7 @@ class BillingController extends Controller
         /** @var \Cartalyst\Stripe\Billing\Laravel\Charge\Charge $charge */
         /** @var \App\Models\TavernUser $user */
         $user = Sentinel::check();
-        if($user===false) {
+        if ($user === false) {
             return redirect('/');
         } else if($user->email===null) {
             Alert::error('You must have an email address confirmed before you can proceed with billing.');

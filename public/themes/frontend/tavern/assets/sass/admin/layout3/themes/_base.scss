@@ -666,7 +666,7 @@ Page Footer
       /* Horizontal mega menu */
       .hor-menu {
         .navbar-nav {
-          background: #fff !important;
+          background: #c5a87c !important;
 
           /* Mega menu content */
           > li.mega-menu-dropdown {
@@ -691,7 +691,7 @@ Page Footer
 
           /* Classic menu */
           > li {
-            border-bottom: 1px solid #F0F0F0;
+            border-bottom: 1px solid #000;
 
             &:last-child {
               border-bottom: 0;
@@ -739,7 +739,7 @@ Page Footer
 
               li {
                 &.divider {
-                  border-bottom: 1px solid #F0F0F0;
+                  border-bottom: 1px solid #000;
                 }
 
                 &:first-child {

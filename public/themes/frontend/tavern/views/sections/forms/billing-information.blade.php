@@ -281,11 +281,6 @@
         <span class="help-block"></span>
     </div>
 
-    <div class="form-group">
-        <input type="text" class="form-control" data-stripe="address_line2" id="address2" autocapitalize="words"
-               name="address.addressLine2" placeholder="Apt./Suite" aria-label="Apt./Suite" tabindex="9">
-        <span class="help-block"></span>
-    </div>
 
     <div class="form-group">
         <label class="control-label" for="city">City</label>

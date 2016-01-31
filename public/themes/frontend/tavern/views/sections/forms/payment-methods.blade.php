@@ -21,7 +21,6 @@
                 $form.get(0).submit();
             }
         }
-        ;
 
         jQuery(function ($) {
             $('#payment-form').submit(function (event) {
@@ -69,7 +68,8 @@
 @stop
 <div class="form-group">
     <label for="tokens">Tokens to Purchase</label>
-    <input type="text" name="tokens" id="tokens" class="form-control" placeholder="Enter amount" tabindex="1" required="required">
+    <input type="number" name="tokens" id="tokens" class="form-control" placeholder="Enter amount" tabindex="1"
+           required="required">
     {{--<span class="input-group-addon">.00</span>--}}
 
 </div>
@@ -162,7 +162,6 @@
                     <option value="" selected="selected">
                         Year
                     </option>
-                    <option value="15">2015</option>
                     <option value="16">2016</option>
                     <option value="17">2017</option>
                     <option value="18">2018</option>

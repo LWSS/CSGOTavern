@@ -75,7 +75,7 @@ return [
         |
         */
 
-        'copyright' => '&copy; 2015 CSGOtavern, VIONOX Inc.',
+        'copyright' => '&copy; 2015 CSGOTavern',
 
         /*
         |--------------------------------------------------------------------------

@@ -469,7 +469,7 @@ Page Footer
     /* Horizontal mega menu */
   }
   .page-header .page-header-menu .hor-menu .navbar-nav {
-    background: #fff !important;
+    background: #c5a87c !important;
     /* Mega menu content */
     /* Classic menu */
   }
@@ -522,7 +522,7 @@ Page Footer
     background: #fff !important;
   }
   .page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li.divider {
-    border-bottom: 1px solid #F0F0F0;
+    border-bottom: 1px solid #000;
   }
   .page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li:first-child {
     margin-top: 1px;

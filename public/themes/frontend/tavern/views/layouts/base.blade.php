@@ -34,6 +34,7 @@
     {{--<!-- BEGIN THEME STYLES -->--}}
     {{ Asset::queue('components-rounded', 'global/css/components-rounded.css', 'uniform.default') }}
     {{ Asset::queue('plugins', 'global/css/plugins.css', 'components-rounded') }}
+    {{ Asset::queue('plugins', 'css/master.css', 'master') }}
     {{--    {{ Asset::queue('style', 'sass/themes/tavern.scss', 'layout') }}--}}
     {{--<!-- END THEME STYLES -->--}}
     {{-- Compiled styles --}}

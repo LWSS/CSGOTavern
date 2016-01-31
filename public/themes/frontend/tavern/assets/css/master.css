@@ -34,6 +34,10 @@ body > div.page-container > div.page-content,
     background: url(../img/background/retina_wood.png) !important;
 }
 
+.page-header-top {
+	background: url(../img/background/retina_wood.png) !important;
+}
+
 .bg-parchment
 {
 	border-color: #EAD5B5 !important;
@@ -185,6 +189,14 @@ a {
 	color: #000;
 }
 
+/* Nav Bar (Non Mobile) background */
+.page-header .page-header-menu .hor-menu .navbar-nav {
+	background: #c5a87c !important;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav {
+	background: #c5a87c !important;
+}
 /* Search btn Submit on Mobile Nav Bar */
 .page-header .search-form .input-group .input-group-btn .btn.submit {
 	/*background: #EAD5B5;
@@ -208,7 +220,6 @@ a {
 .page-header .page-header-menu .hor-menu .navbar-nav > li:hover > a {
 	color: #fff !important;
 }
-
 /* Icon Color when Selected in Mobile Nav Bar Dropdowns */
 .page-header .page-header-menu .hor-menu .navbar-nav > li.open > a > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.open > a:hover > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.active > a > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.current > a > i, .page-header .page-header-menu .hor-menu .navbar-nav > li.current > a:hover > i {
 	color: #000 !important;
