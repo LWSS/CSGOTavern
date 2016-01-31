@@ -122,13 +122,13 @@ class SteamBotController extends Controller
                 break;
             case 1: // Single Receive Item
                 if (isset($_POST['error'])) {
-                    // Item was not Sent to User, we should probably tell them why
+                    // Item was not Sent to Us, we should probably tell them why
                     break;
                 }
                 if (isset($_POST['marketID']) && isset($_POST['tradeID'])) {
                     // Offer has been Sent to User
                     $item = \App\Models\MarketItems::find($_POST['marketID']);
-                    if ($item != null) {
+                    if ($item !== null) {
                         $item->trade_id = $_POST['tradeID'];
                         $item->save();
                     }
@@ -136,7 +136,7 @@ class SteamBotController extends Controller
                 if (isset($_POST['state']) && isset($_POST['tradeID'])) {
                     $item = \App\Models\MarketItems::where('trade_id', $_POST['tradeID'])->first(); // this is unique, there should only be 1 row,
                     if ($item === null) {
-                        throwException('meme');
+                        throwException('Meme');
                         // Error, couldn't find the Item based on trade_id
                         // This Means we Received an Item and don't know which one it is
                         break;
@@ -242,13 +242,10 @@ class SteamBotController extends Controller
                         case 11:// In Escrow
                             $item->last_status = 11;
                             $item->save();
-
                     }
                 }
                 break;
             case 4: // SendMulti
-                break;
-            case 5: // Cancel
                 break;
         }
         return 'OK';
