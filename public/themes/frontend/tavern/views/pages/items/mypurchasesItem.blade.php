@@ -177,7 +177,7 @@
                                                                     <div class="col-md-7 value">
                                                                         <span class="label label-primary"> Offer Pending </span>
                                                                     </div>
-                                                                    @if( $userPurchase->last_status === 11 )
+                                                                    @if( $userPurchase->last_status == 11 )
                                                                         <div class="col-md-7 value">
                                                                             <span class="label label-default"> In Escrow </span>
                                                                         </div>

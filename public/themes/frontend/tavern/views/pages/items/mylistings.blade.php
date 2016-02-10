@@ -120,7 +120,7 @@
                                                 <div class="col-md-7 value">
                                                     <span class="label label-warning"> Not Received </span>
                                                 </div>
-                                                @if( $listing->last_status === 11 )
+                                                @if( $listing->last_status == 11 )
                                                     <div class="col-md-7 value">
                                                         <span class="label label-default"> In Escrow </span>
                                                     </div>
