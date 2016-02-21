@@ -435,7 +435,7 @@ Route::get('mypurchases/{id}/send', ['middleware' => 'lock', function ($marketId
         return redirect()->back()->withInput()->with('error', 'Need to Set your Trade Token On your Profile Page');
     }
     $tradeOfferToken = uniqid();
-    $botContact = \App\Http\Controllers\API\Bots\SteamBotController::receiveItem($marketItem, $marketItem->first_asset_id, $marketItem->user->trade_token, 'Good Evening Sir/Madam, here is your Offer: (' . $tradeOfferToken . ') This Offer will Expire in 4 Days');
+    $botContact = \App\Http\Controllers\API\Bots\SteamBotController::receiveItem($marketItem, $marketItem->asset_id, $marketItem->user->trade_token, 'Good Evening Sir/Madam, here is your Offer: (' . $tradeOfferToken . ') This Offer will Expire in 4 Days');
     if ($botContact === 'OK') {
         return redirect()->back()->withInput()->with('green', 'Trade Offer Requested, Check your Trade Offers! Token: ' . $tradeOfferToken);
     } else if ($botContact === null) {
