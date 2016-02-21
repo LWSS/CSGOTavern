@@ -191,6 +191,13 @@
                                                                         <span class="label label-warning"> Paid for </span>
                                                                     </div>
                                                                 @endif
+                                                                @if( $userPurchase->item_error !== null )
+                                                                    <div class="col-md-7 value">
+                                                                        <b> Contact Me Directly: admin@csgotavern
+                                                                            .com </b>
+                                                                        <span class="label label-danger"> Error: {{ $marketItem->item_error }} </span>
+                                                                    </div>
+                                                                @endif
                                                             </div>
                                                             <div class="row static-info">
                                                                 <div class="col-md-5 name">

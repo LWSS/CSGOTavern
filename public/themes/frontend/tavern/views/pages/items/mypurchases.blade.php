@@ -107,7 +107,9 @@
                                             {{ $purchase->updated_at }}
                                         </td>
                                         <td>
-                                            @if( $purchase->asset_id !== null )
+                                            @if( $purchase->item_error !== null )
+                                                <i style="color: red;">Error
+                                                    @elseif( $purchase->asset_id !== null )
                                                 @if( $purchase->last_status === 11 )
                                                     No (ESCROW)
                                                 @else

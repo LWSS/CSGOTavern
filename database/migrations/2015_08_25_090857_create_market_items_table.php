@@ -30,6 +30,7 @@ class CreateMarketItemsTable extends Migration
             $table->string('description')->nullable(); // User Set Description of the Listing.
             $table->string('item_img')->nullable();
             $table->string('inspect_url')->nullable();
+            $table->string('item_error')->nullable(); // Error in case something happened to the bot.
             $table->tinyInteger('last_status')->unsigned()->nullable(); // Status on the last Trade offer this was Associated with codes 0-255 Available
             $table->timestamps();
         });

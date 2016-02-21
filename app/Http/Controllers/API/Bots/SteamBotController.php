@@ -123,6 +123,14 @@ class SteamBotController extends Controller
             case 1: // Single Receive Item
                 if (isset($_POST['error'])) {
                     // Item was not Sent to Us, we should probably tell them why
+                    $item = \App\Models\MarketItems::where('trade_id', $_POST['tradeID'])->first();
+                    if ($item === null) {
+                        // Error, couldn't find the Item based on trade_id
+                        // This Means we Received an ERROR for an Item and don't know which one it is
+                        break;
+                    }
+                    $item->item_error = $_POST['error'];
+                    $item->save();
                     break;
                 }
                 if (isset($_POST['marketID']) && isset($_POST['tradeID'])) {

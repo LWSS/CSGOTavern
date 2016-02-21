@@ -197,7 +197,13 @@
                                                                 <div class="col-md-5 name">
                                                                     Order Status:
                                                                 </div>
-                                                                @if( $marketItem->buyer_id !== null )
+                                                                @if( $marketItem->item_error !== null )
+                                                                    <div class="col-md-7 value">
+                                                                        <b> Contact Me Directly: admin@csgotavern
+                                                                            .com </b>
+                                                                        <span class="label label-danger"> Error: {{ $marketItem->item_error }} </span>
+                                                                    </div>
+                                                                @elseif( $marketItem->buyer_id !== null )
                                                                     <div class="col-md-7 value">
                                                                         <span class="label label-success"> Sold </span>
                                                                     </div>

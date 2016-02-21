@@ -108,7 +108,11 @@
                                             <a href="/sell/list/setup/{{ $listing->id }}">{{ $listing->item_name }}</a>
                                         </td>
                                         <td>
-                                            @if( $listing->buyer_id !== null )
+                                            @if( $listing->item_error !== null )
+                                                <div class="col-md-7 value">
+                                                    <span class="label label-danger"> Error! </span>
+                                                </div>
+                                            @elseif( $listing->buyer_id !== null )
                                                 <div class="col-md-7 value">
                                                     <span class="label label-success"> Sold </span>
                                                 </div>
