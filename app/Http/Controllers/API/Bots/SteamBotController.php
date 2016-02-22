@@ -117,8 +117,10 @@ class SteamBotController extends Controller
         }
         switch ($_POST['Command']) {
             case 0: // Error with Bot
-                $botLookup->error_message = $_POST['Message'];
-                $botLookup->save();
+                if (isset($_POST['Message'])) {
+                    $botLookup->error_message = $_POST['Message'];
+                    $botLookup->save();
+                }
                 break;
             case 1: // Single Receive Item
                 if (isset($_POST['error'])) {

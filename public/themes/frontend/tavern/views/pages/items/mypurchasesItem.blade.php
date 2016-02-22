@@ -57,8 +57,10 @@
             <div class="page-title">
                 @if( Session::has('error') )
                     <h1 style="color: red;"> {{ Session::get('error')  }}</h1>
+                @elseif (Session::has('green'))
+                    <h1 style="color: green;"> {{ Session::get('green')  }}</h1>
                 @else
-                    <h1> Your {{ $userPurchase->item_name }}</h1>
+                    <h1> Your {{ $marketItem->item_name }} </h1>
                 @endif
             </div>
             {{--<!-- END PAGE TITLE -->--}}

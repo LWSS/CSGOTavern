@@ -139,6 +139,14 @@
                                 </tbody>
                             </table>
                         </div>
+                        @else
+                            <div class="portlet-title">
+                                <div class="actions">
+                                    <a href="/mylistings/all" class="btn btn-default btn-sm"> <i
+                                                class="fa fa-history"></i>
+                                        Show All </a>
+                                </div>
+                            </div>
                         @endif
                     </div>
                 </div>
