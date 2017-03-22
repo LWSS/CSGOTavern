@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bbcha_000
- * Date: 8/21/2015
- * Time: 4:28 PM
- */
 
 namespace App\Libraries;
 use Config;
