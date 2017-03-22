@@ -12,7 +12,7 @@ Was never released, however.
 
 Currently needs a payment system. Was using Stripe, but ripped it out. 
 
-Also note this does not use the original_id attribute from the CSGO API. So now that the CSGO API is dead, it should still work. 
+Note: Uses the now defunct CSGO API ( http://api.steampowered.com/IEconItems_730/ )
 
 
 Code Licensed under MIT. However, it would be cool if you put that you used my code somewhere on your site. 
